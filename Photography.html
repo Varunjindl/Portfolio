@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;400&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://png.pngtree.com/png-clipart/20200709/original/pngtree-abstract-s-letter-circle-vector-logo-design-alphabet-circle-logo-vector-png-image_3611616.jpg"
+        rel="icon" type="image">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+    <link href="css/Photography.css" rel="stylesheet">
+    <title>Photography</title>
+</head>
+<body id="menu">
+    <header>
+        <div class="main-head">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="head row justify-content-around align-item-center">
+                        <div class="bar-icon">
+                            <a href="#">
+                                <span>M</span>
+                                <span>E</span>
+                                <span>N</span>
+                                <span>U</span>
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </div>
+                        <div class="bar-menu row">
+                            <ul class="pad-10 hove side">
+                                <li><a href="#home">HOME</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="#service">SERVICE</a></li>
+                                <li class="drop-menu">
+                                    <a href="#port">PORTFOLIO <i class="fas fa-caret-down"></i></a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">portfolio</a>
+                                        <a class="dropdown-item" href="#">portfolio details</a>
+                                    </div>
+                                </li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo">
+                            <a href="#menu">
+                                <img
+                                    src="data:image/webp;base64,UklGRngFAABXRUJQVlA4TGwFAAAvnoAHEO/mIJIkRaqeOfy39P71MA88iXAQSZIi5R749/cemGFn2mEkyUo1e4eTEvnHA9/lhGHbNo7o5Hv//Yc9s2nbJGln3QF0erRGkJVqK62lVEoInZYSR/HFDPtAQzTEhtEi+/MpZqguHTw+H5WSVbpLpz2+P9fXU8x0/3wQVJfr6yUrVbfL86nTDpfL7f1S3apLVYpKVSUqnG53nRYzZKXn9ye7VKXX/y+rZKecqdOyQgc5Q3WrlE7rLlklK3SQlTqtNYKsBAYYYAIBAQUKBBSYQECBGVxgBQELKBCwgfwkfxbQYAIBPwhoUKBAQEBAwAwCtq/l90GDEwRMYAUTCNh/HNCgwAkKFJhAwAQCAiZQoEFAgwL5k4EJ1HwYTh9OZDIZjYwRETHGOWOcG8dIxBgR50SMGY1EREREnJtMRER8OJHZbDBwzjnnRJwzxjkbxrnJZLWazbZjZ4wxk8lkslgsY/HP2v0OIsaA/v7/arbke+zuVuzu7u43YR8GY+TIzXbmEzNGw8ybhiM2tiK2YncnesNfc87O9uTPEf2fAPG8eQWVT4yVQeh4fM2Ng5AHWDgmDMeMHxOOW82UQcSIUaHzYR65Y85SYOlcw52he9SIAW/0U1QPpcmnRg90C+jpBQMdTBGR4Z2uc089+YzLXN3DRWQKDHyhiNwLcMERuyul1BZDTrLoEJGwno6iSPeEjqIoaC6Io0D3jekAx+2iqg+8CGBGEwV27ogBIyIFkLgKbJM4SqoTKzbYhauF27g0QF7RwmmKwHXTcuBIpdQf69c889LHvyu15/nACl2vhbuwkgrjYajMLFMjpbLlMHUCq6wwLiB13AMcq9S26zZ9+NMvL7bba7dXe18O3F8rozpopgNPXSMVETzTRlKLBtAQXrsSzttNbfPymg1Kqffa7fYL26kjgFXX1SmAXHIga8YAhQRWIiJBoK1MB1oktiLJgXlVqWitXYUj8EkkthIIpwKHK/XJ89urX99+tm2/r3a7GJhWxwBaNDCvEQ2gRXKgEKcBErE7gEJEA6YqEc+WI/GTDiCFsAuu2FltaP+mvmtX/6mOAbrrlEBimaxHimaKHtI48xoxMA/CuXCaUt8+t9m/Gz2+UAcB8+sUAFq0OPuVwFXWSIEUwsfgBKXWvau+b3u+pfYFnqyTWATSlzzrpEAJ+MSiDZBAuAiOUeqNj9SXPq+oPYBFdaS0iH0wxtB3gJarADIg8KDE1hA+Cicq9cHr6meftWo/4PFaYixSn8peE2VZlqVextUCEwGJjzMTCGfCWUr9sOmvH32+VocAc+tJaZH0GYPthUMD8wTI62Ri3Qfspf7f1Pb+Rx0PdDQguYWuMEEUmN6EbapSrbUjAHIxUHokHUDumAgcrdTnXuvVTpcCcRPSYRVVItKrksR4JVKZAkUE4BMAxjFiCVy5j9ryTY/XtlZHAUuvqRN3lKVIAZi+ItJQQXXgIQCBJXcBZ++ktvpso+vTrdUBVwN3Sx0AEQ2g+5eWR+JTApnj+hZw+o5K/ffNO6+u/epvpfa/BFh8Q60CCET6Rl5BIxqgo6MAcp8MKB0yYRhw/hBVuflhlwPDJkmtHGjpFDDShLSAQgKApF4MEEuHX1oRAPNENFD6BADaIbdin3LwrkqpHQ49E/t2qaepntdMhqfUE8vtYRsRSYFcRAzgI1bsktuGYl91zpkX4r5TGpC8SjcjpiptIu2JAkhEpAUEPvOAokImL7U8l02VRiR1lFpEJG5ACoeJpbLlI4kjM66WVwkEIpIDsYi0XClQDuOW0Dn2wac9Vj80LnTewrAaIlEcaelBHUVxJI1HcaSl18+ip2fVGnBHzh7aI0PnjBzoAA==">
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <nav class="row">
+                                <ul class="row justify-content-around align-item-center navigation hove">
+                                    <li><a href="#home">HOME</a></li>
+                                    <li><a href="#about">ABOUT</a></li>
+                                    <li><a href="#service">SERVICE</a></li>
+                                    <li class="drop-menu">
+                                        <a href="#port">PORTFOLIO <i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">portfolio</a>
+                                            <a class="dropdown-item" href="#">portfolio details</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="#contact">CONTACT</a></li>
+                                </ul>
+                                <div class="bag">
+                                    <a href="#">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="banner">
+            <div class="container">
+                <div class="row justify-content-end align-item-center text-center verticle-middle banner-content">
+                    <div class="pad-15">
+                        <h5>Model Photography</h5>
+                        <h1>Creative <span>Studio</span></h1>
+                        <p>Capturing moments from today</p>
+                        <a href="#" class="btn">view work</a>
+                    </div>
+                    <div class="short-img">
+                        <img
+                            src="https://preview.colorlib.com/theme/fotograp/images/xperson_7.jpg.pagespeed.ic.Ita-2SH2JR.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="home" class="photography">
+
+            <head>
+                <section class="banner2 banner3-img">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="about-content">
+                                <h1>Latest Work</h1>
+                                <p>Fowl living for lights our ears bearing to heaven signs</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </head>
+            <div class="grid">
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_1.jpg.pagespeed.ic.4DMl4Ho4QA.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 01</h3>
+                            <span>Model</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_2.jpg.pagespeed.ic.v4HFhkrSon.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 02</h3>
+                            <span>Nature</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_3.jpg.pagespeed.ic.he_o6QONxf.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 03</h3>
+                            <span>Fashion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_4.jpg.pagespeed.ic.0yoe2JNnvB.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 04</h3>
+                            <span>Travel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_5.jpg.pagespeed.ic.X1eVgzd4fj.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 05</h3>
+                            <span>Travel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_6.jpg.pagespeed.ic.8Fb7-921wR.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 06</h3>
+                            <span>Travel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_7.jpg.pagespeed.ic.hOkc6x1WnL.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 07</h3>
+                            <span>Fashion, Model</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_8.jpg.pagespeed.ic.A96wBc7WzG.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 08</h3>
+                            <span>Nature</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_9.jpg.pagespeed.ic.M19kFGgcO-.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 09</h3>
+                            <span>Technology</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_10.jpg.pagespeed.ic._oDVIG86PO.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 10</h3>
+                            <span>Model</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_11.jpg.pagespeed.ic.X_sFCL6qKS.webp)">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h3>Work 11</h3>
+                            <span>Fashion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mw33">
+                    <div class="img row justify-content-center align-items-center"
+                        style="background-image:url(https://preview.colorlib.com/theme/capture/images/ximage_12.jpg.pagespeed.ic.o65w1hpBpd.webp)">
+                        <div class="overlay"></div>
+                        <div class="text ">
+                            <h3>Work 12</h3>
+                            <span>Photography</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="banner2" id="about">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="about-content">
+                        <h1>About Us</h1>
+                        <p>Fowl living for lights our ears bearing to heaven signs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="about">
+            <div class="container white">
+                <div class="about-display">
+                    <div class="about-img">
+                        <img src="https://preview.colorlib.com/theme/proshoot/img/about-img.jpg.webp">
+                    </div>
+                    <div class="about-text">
+                        <h1>Lets<br>Introduce About Myself</h1>
+                        <p>Up my excuse to suffer ladies though or. Bachelor possible out marianne directly confined
+                            relation as on he.</p>
+                        <p>Lose john poor same it case do year we. Full how way even the si extremely nor furniture fat
+                            questions now provision one incommod preserved. Dose john poor same it case do year go we.
+                            Full
+                            how way even the sigh. Extremely nor furniture fat one questions now provision then doing
+                            for.
+                        </p>
+                        <h2>SOCIAL HANDELS</h2>
+                        <a href="#" class="block">
+                            <span>FACEBOOK:- <i class="fab fa-facebook"></i></span>
+                        </a>
+                        <a href="#" class="block">
+                            <span>INSTAGRAM:- <i class="fab fa-instagram"></i></span>
+                        </a>
+                        <a href="#" class="block">
+                            <span>TWITTER:- <i class="fab fa-twitter"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="banner2 banner4-img" id="service">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="about-content">
+                        <h1>SERVICE</h1>
+                        <p>Fowl living for lights our ears bearing to heaven signs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slider">
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+                    <div><img
+                            src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/xgallery2.jpg.pagespeed.ic.9lyDJGNv7v.webp">
+                    </div>
+                    <div><img
+                            src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/xgallery1.jpg.pagespeed.ic.tNg56UU-MC.webp">
+                    </div>
+                    <div><img
+                            src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/xgallery3.jpg.pagespeed.ic.BMVCYpI8Mo.webp">
+                    </div>
+                    <div><img
+                            src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/xgallery4.jpg.pagespeed.ic.CkMZ5z0ZMs.webp">
+                    </div>
+                    <div><img
+                            src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/xgallery5.jpg.pagespeed.ic.kH8QVJ20od.webp">
+                    </div>
+                    <div><img
+                            src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/xgallery6.jpg.pagespeed.ic.ywCe0WKAWh.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="banner2 banner4-img" id="port">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="about-content">
+                        <h1>I do for you</h1>
+                        <p>Fowl living for lights our ears bearing to heaven signs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="works">
+            <div class="container">
+                <div class="work-grid justify-content-around align-item-center">
+                    <div class="work white">
+                        <div class="one mar-5">
+                            <div class="mar-5">
+                                <img src="https://d3nn873nee648n.cloudfront.net/900x600/19041/220-SM890879.jpg">
+                            </div>
+                            <div class="mar-5 work-content">
+                                <h3><a href="#">Event Photography</a></h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia non harum sunt
+                                    facilis. Eius excepturi delectus et, quam, perferendis assumenda quasi facilis,
+                                    aliquam quaerat dicta hic dolore nemo laudantium eos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work white">
+                        <div class="one mar-5">
+                            <div class="mar-5">
+                                <img src="https://d3nn873nee648n.cloudfront.net/900x600/19028/220-SM889746.jpg">
+                            </div>
+                            <div class="mar-5 work-content">
+                                <h3><a href="#">Wedding Photography</a></h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia non harum sunt
+                                    facilis. Eius excepturi delectus et, quam, perferendis assumenda quasi facilis,
+                                    aliquam quaerat dicta hic dolore nemo laudantium eos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work white">
+                        <div class="one mar-5">
+                            <div class="mar-5">
+                                <img src="https://d3nn873nee648n.cloudfront.net/900x600/19538/220-SM939041.jpg">
+                            </div>
+                            <div class="mar-5 work-content">
+                                <h3><a href="#">Family Photography</a></h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia non harum sunt
+                                    facilis. Eius excepturi delectus et, quam, perferendis assumenda quasi facilis,
+                                    aliquam quaerat dicta hic dolore nemo laudantium eo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container" id="contact">
+            <div class="footer-content">
+
+                <head>
+                    <img
+                        src="data:image/webp;base64,UklGRngFAABXRUJQVlA4TGwFAAAvnoAHEO/mIJIkRaqeOfy39P71MA88iXAQSZIi5R749/cemGFn2mEkyUo1e4eTEvnHA9/lhGHbNo7o5Hv//Yc9s2nbJGln3QF0erRGkJVqK62lVEoInZYSR/HFDPtAQzTEhtEi+/MpZqguHTw+H5WSVbpLpz2+P9fXU8x0/3wQVJfr6yUrVbfL86nTDpfL7f1S3apLVYpKVSUqnG53nRYzZKXn9ye7VKXX/y+rZKecqdOyQgc5Q3WrlE7rLlklK3SQlTqtNYKsBAYYYAIBAQUKBBSYQECBGVxgBQELKBCwgfwkfxbQYAIBPwhoUKBAQEBAwAwCtq/l90GDEwRMYAUTCNh/HNCgwAkKFJhAwAQCAiZQoEFAgwL5k4EJ1HwYTh9OZDIZjYwRETHGOWOcG8dIxBgR50SMGY1EREREnJtMRER8OJHZbDBwzjnnRJwzxjkbxrnJZLWazbZjZ4wxk8lkslgsY/HP2v0OIsaA/v7/arbke+zuVuzu7u43YR8GY+TIzXbmEzNGw8ybhiM2tiK2YncnesNfc87O9uTPEf2fAPG8eQWVT4yVQeh4fM2Ng5AHWDgmDMeMHxOOW82UQcSIUaHzYR65Y85SYOlcw52he9SIAW/0U1QPpcmnRg90C+jpBQMdTBGR4Z2uc089+YzLXN3DRWQKDHyhiNwLcMERuyul1BZDTrLoEJGwno6iSPeEjqIoaC6Io0D3jekAx+2iqg+8CGBGEwV27ogBIyIFkLgKbJM4SqoTKzbYhauF27g0QF7RwmmKwHXTcuBIpdQf69c889LHvyu15/nACl2vhbuwkgrjYajMLFMjpbLlMHUCq6wwLiB13AMcq9S26zZ9+NMvL7bba7dXe18O3F8rozpopgNPXSMVETzTRlKLBtAQXrsSzttNbfPymg1Kqffa7fYL26kjgFXX1SmAXHIga8YAhQRWIiJBoK1MB1oktiLJgXlVqWitXYUj8EkkthIIpwKHK/XJ89urX99+tm2/r3a7GJhWxwBaNDCvEQ2gRXKgEKcBErE7gEJEA6YqEc+WI/GTDiCFsAuu2FltaP+mvmtX/6mOAbrrlEBimaxHimaKHtI48xoxMA/CuXCaUt8+t9m/Gz2+UAcB8+sUAFq0OPuVwFXWSIEUwsfgBKXWvau+b3u+pfYFnqyTWATSlzzrpEAJ+MSiDZBAuAiOUeqNj9SXPq+oPYBFdaS0iH0wxtB3gJarADIg8KDE1hA+Cicq9cHr6meftWo/4PFaYixSn8peE2VZlqVextUCEwGJjzMTCGfCWUr9sOmvH32+VocAc+tJaZH0GYPthUMD8wTI62Ri3Qfspf7f1Pb+Rx0PdDQguYWuMEEUmN6EbapSrbUjAHIxUHokHUDumAgcrdTnXuvVTpcCcRPSYRVVItKrksR4JVKZAkUE4BMAxjFiCVy5j9ryTY/XtlZHAUuvqRN3lKVIAZi+ItJQQXXgIQCBJXcBZ++ktvpso+vTrdUBVwN3Sx0AEQ2g+5eWR+JTApnj+hZw+o5K/ffNO6+u/epvpfa/BFh8Q60CCET6Rl5BIxqgo6MAcp8MKB0yYRhw/hBVuflhlwPDJkmtHGjpFDDShLSAQgKApF4MEEuHX1oRAPNENFD6BADaIbdin3LwrkqpHQ49E/t2qaepntdMhqfUE8vtYRsRSYFcRAzgI1bsktuGYl91zpkX4r5TGpC8SjcjpiptIu2JAkhEpAUEPvOAokImL7U8l02VRiR1lFpEJG5ACoeJpbLlI4kjM66WVwkEIpIDsYi0XClQDuOW0Dn2wac9Vj80LnTewrAaIlEcaelBHUVxJI1HcaSl18+ip2fVGnBHzh7aI0PnjBzoAA==">
+                </head>
+                <div>
+                    <ul class="foot align-item-center justify-content-around footer-content">
+                        <li>
+                            <a href="mailto:varunjindal321@gmail.com" target="_blank">
+                                Email
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/varunjindl/" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/varunjindal321" target="_blank">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/varun-jindal-454180213" target="_blank">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li><a href="#">Behance</a></li>
+                    </ul>
+                </div>
+                <p>| Copyright © 2022 All rights reserved |</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var x = $(window).scrollTop();
+                if (x >= 500) {
+                    $(".main-head").addClass("x");
+                } else {
+                    $(".main-head").removeClass("x");
+                }
+            });
+            $(".bar-icon").click(function () {
+                $(".bar-menu").toggleClass("z");
+            });
+            $(".container").click(function () {
+                $(".bar-menu").removeClass("z");
+            });
+
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                mouseDrag: true,
+                touchDrag: true,
+                URLhashListener: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    300: {
+                        items: 2,
+                    },
+                    700: {
+                        items: 3,
+                    },
+                    900: {
+                        items: 4,
+                    },
+                },
+            });
+            
+jQuery(($) => {
+    // The speed of the scroll in milliseconds
+    const speed = 1000;
+
+    $('a[href*="#"]')
+        .filter(
+            (i, a) =>
+                a.getAttribute("href").startsWith("#") ||
+                a.href.startsWith(`${location.href}#`)
+        )
+        .unbind("click.smoothScroll")
+        .bind("click.smoothScroll", (event) => {
+            const targetId = event.currentTarget.getAttribute("href").split("#")[1];
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                event.preventDefault();
+                $("html, body").animate(
+                    { scrollTop: $(targetElement).offset().top },
+                    speed
+                );
+            }
+        });
+        });
+    });
+    </script>
+</body>
+
+</html>
